@@ -13,9 +13,6 @@ export const getScoreDifferences = (parsedInputData, jobData) => {
   let comparedScores = []
 
   jobData.forEach((job, i) => {
-    console.log('parsedInputData', parsedInputData)
-    console.log('job', job)
-
     const parsedJobSalary = Number(
       ((job.salaryRange.medium / 100000) * 2).toFixed(1)
     )
