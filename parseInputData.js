@@ -5,7 +5,7 @@ export const parseInputData = (inputData) => {
   const parsedOutdoorsExtent = (outdoorsExtent / 10) * 2
   const parsedHandsOnExtent = (handsOnExtent / 10) * 2
   const parsedTechnologyExtent = (technologyExtent / 10) * 2
-  const parsedCurrentSalary = currentSalary / 1000
+  const parsedCurrentSalary = currentSalary
 
   return {
     parsedOutdoorsExtent,
