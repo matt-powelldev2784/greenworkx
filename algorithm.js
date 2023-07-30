@@ -1,14 +1,10 @@
 import { dummyInputData } from './dummyInputData.js'
+import { parseInputData } from './parseInputData.js'
 
-const getScoreUserMatches = (userData) => {
-  const {
-    willingnessToWorkOutdoors,
-    willingnessToLearnHandsOnSkills,
-    willingnessToWorkWithTechnology,
-    currentAnnualSalaryEquivalent,
-  } = userData
+const parsedInputData = parseInputData(dummyInputData)
 
-  console.log('userData', userData)
+const getScoreUserMatches = (parsedInputData) => {
+  console.log('parsedInputData', parsedInputData)
 }
 
-getScoreUserMatches(dummyInputData)
+getScoreUserMatches(parsedInputData)
