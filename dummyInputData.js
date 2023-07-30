@@ -1,4 +1,4 @@
-const dummyInputData = {
+export const dummyInputData = {
   name: 'Matthew Powell',
   currentSalary: 50000,
   outdoorsExtent: 5,
