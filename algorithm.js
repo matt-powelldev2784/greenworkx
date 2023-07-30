@@ -1,10 +1,13 @@
 import { dummyInputData } from './dummyInputData.js'
 import { parseInputData } from './parseInputData.js'
+import { jobData } from './jobData.js'
+import { getScoreDifferences } from './getScoreDifferences.js'
 
 const parsedInputData = parseInputData(dummyInputData)
 
-const getScoredUserMatches = (parsedInputData) => {
-  console.log('parsedInputData', parsedInputData)
-}
+const scoreDifferences = getScoreDifferences(parsedInputData, jobData)
+console.log('scoreDifferences', scoreDifferences)
+
+const getScoredUserMatches = (parsedInputData) => {}
 
 getScoredUserMatches(parsedInputData)
