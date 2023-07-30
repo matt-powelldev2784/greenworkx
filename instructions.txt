@@ -1,0 +1,8 @@
+It’d be interesting for you to have a go at ************************writing a first, basic version of the matching algorithm************************.
+
+Over time, we’d have much richer data and a much more sophisticated algorithm - but right now, all we’re looking to do is satisfy some more simple requirements:
+
+- it should take inputs of the user data which we’ve collected
+- it should output at least three top ‘matches’ of career paths
+- each ‘match’ should have some ‘match score’ associated with it
+- it should be responsive to user inputs in some meaningful way
