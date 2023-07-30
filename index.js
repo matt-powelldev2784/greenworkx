@@ -1,7 +1,7 @@
-import { dummyInputData } from './dummyInputData.js'
-import { parseInputData } from './parseInputData.js'
-import { jobData } from './jobData.js'
-import { getScoreDifferences } from './getScoreDifferences.js'
+import { dummyInputData } from './data/dummyInputData.js'
+import { parseInputData } from './js/parseInputData.js'
+import { jobData } from './data/jobData.js'
+import { getScoreDifferences } from './js/getScoreDifferences.js'
 
 const parsedInputData = parseInputData(dummyInputData)
 
