@@ -3,8 +3,8 @@ import { parseInputData } from './parseInputData.js'
 
 const parsedInputData = parseInputData(dummyInputData)
 
-const getScoreUserMatches = (parsedInputData) => {
+const getScoredUserMatches = (parsedInputData) => {
   console.log('parsedInputData', parsedInputData)
 }
 
-getScoreUserMatches(parsedInputData)
+getScoredUserMatches(parsedInputData)
