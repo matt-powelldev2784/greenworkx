@@ -30,7 +30,7 @@ export const jobData = [
   {
     name: 'Soil Technician',
     salaryRange: { low: 22000, medium: 24000, high: 28500 },
-    trainingRequirement: 'JobTrainingRequirement.LOW',
+    //trainingRequirement: JobTrainingRequirement.LOW,
     outdoorsExtent: 0.5,
     handsOnExtent: 0.2,
     technologyExtent: 0.5,
