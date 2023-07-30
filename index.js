@@ -6,8 +6,22 @@ import { getScoreDifferences } from './js/getScoreDifferences.js'
 const parsedInputData = parseInputData(dummyInputData)
 
 const scoreDifferences = getScoreDifferences(parsedInputData, jobData)
-console.log('scoreDifferences', scoreDifferences)
 
-const getScoredUserMatches = (parsedInputData) => {}
+const getScoredUserMatches = (scoreDifferences) => {
+  const topThreeMatchedResults = scoreDifferences
+    .map((job) => {
+      return {
+        name: job.name,
+        score: job.overalMatchPercent,
+      }
+    })
+    .sort((a, b) => {
+      return b.score - a.score
+    })
+    .slice(0, 3)
 
-getScoredUserMatches(parsedInputData)
+  return topThreeMatchedResults
+}
+
+const scoredUserMatches = getScoredUserMatches(scoreDifferences)
+console.log('scoredUserMatches', scoredUserMatches)
